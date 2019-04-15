@@ -1,55 +1,31 @@
 {
-	"compilerOptions": {
-		"allowJs": true,
-		"allowSyntheticDefaultImports": true,
-		"baseUrl": ".",
-		"jsx": "preserve",
-		"lib": [
-			"dom",
-			"es2017"
-		],
-		"module": "esnext",
-		"moduleResolution": "node",
-		"noEmit": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"preserveConstEnums": true,
-		"removeComments": false,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strict": true,
-		"target": "esnext",
-		"paths": {
-			"@Components/*": [
-				"./src/Components/*"
-			],
-			"@Components": [
-				"./src/Components"
-			],
-			"@Interfaces": [
-				"./src/Interfaces"
-			],
-			"@Interfaces/*": [
-				"./src/Interfaces/*"
-			],
-			"@Definations": [
-				"./src/Definations"
-			],
-			"@Reducers": [
-				"./src/Redux/Reducers"
-			],
-			"@Reducers/*": [
-				"./src/Redux/Reducers/*"
-			],
-			"@Redux": [
-				"./src/Redux"
-			],
-			"@Redux/*": [
-				"./src/Redux/*"
-			],
-			"@Actions": [
-				"./src/Actions"
-			]
-		},
-	}
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
 }
